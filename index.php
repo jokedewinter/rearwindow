@@ -40,62 +40,17 @@
 				<li id="yellow">Down into the abyss</li>
 			</ul>
 
-			<ul class="rearwindow__images">
-				<li class="purple">
-					<a href="#purple">
-						<img src="images/colours/purple.png" alt="">
-					</a>
-				</li>
-
-				<li class="brown">
-					<a href="#brown">
-						<img src="images/colours/brown.png" alt="">
-					</a>
-				</li>
-
-				<li class="blue">
-					<a href="#blue">
-						<img src="images/colours/blue.png" alt="">
-					</a>
-				</li>
-
-				<li class="green">
-					<a href="#green">
-						<img src="images/colours/green.png" alt="">
-					</a>
-				</li>
-
-				<li class="red">
-					<a href="#red">
-						<img src="images/colours/red.png" alt="">
-					</a>
-				</li>
-
-				<li class="orange">
-					<a href="#orange">
-						<img src="images/colours/orange.png" alt="">
-					</a>
-				</li>
-
-				<li class="grey">
-					<a href="#grey">
-						<img src="images/colours/grey.png" alt="">
-					</a>
-				</li>
-
-				<li class="mint">
-					<a href="#mint">
-						<img src="images/colours/mint.png" alt="">
-					</a>
-				</li>
-
-				<li class="yellow">
-					<a href="#yellow">
-						<img src="images/colours/yellow.png" alt="">
-					</a>
-				</li>
-
-			</ul>
+			<div class="rearwindow__images">
+				<a class="purple" href="#purple"></a>
+				<a class="brown" href="#brown"></a>
+				<a class="blue" href="#blue"></a>
+				<a class="green" href="#green"></a>
+				<a class="red" href="#red"></a>
+				<a class="orange" href="#orange"></a>
+				<a class="grey" href="#grey"></a>
+				<a class="mint" href="#mint"></a>
+				<a class="yellow" href="#yellow"></a>
+			</div>
 
 			<img class="rearwindow__courtyard" src="images/courtyard.png" alt="">
 		</section>
