@@ -149,6 +149,16 @@ ul {
 
 }
 
+#purple { background-color: #E3CBF7; }
+#brown { background-color: #BEAC9C; }
+#blue { background-color: #9FA7C8; }
+#green { background-color: #B8D292; }
+#red { background-color: #F58A97; }
+#orange { background-color: #FFB285; }
+#grey { background-color: #A09E9E; }
+#mint { background-color: #D6E4D8; }
+#yellow { background-color: #FFF796; }
+
 
 /**
  * -------------------------------------------------------------------------------------------------
@@ -245,6 +255,8 @@ ul {
 	#yellow {
 		background-image: url('../images/sections/yellow.png');
 	}
+
+
 }
 
 
@@ -256,62 +268,54 @@ ul {
 
 @media screen and (min-width: 600px ) {
 	
-.rearwindow__areas {
-	height: 2.5em;
-}
-#purple {
-	width: 17.578125%;
-	background-color: #E3CBF7;
-	margin-left: 2%;
-}
+	.rearwindow__areas {
+		height: 2.5em;
+	}
 
-#brown {
-	background-color: #BEAC9C;
-	width: 14.453125%;
-	margin-left: 16.5%;
-}
+	#purple {
+		width: 17.578125%;
+		margin-left: 2%;
+	}
 
-#blue {
-	background-color: #9FA7C8;
-	width: 18%;
-	margin-left: 29%;
-}
+	#brown {
+		width: 14.453125%;
+		margin-left: 16.5%;
+	}
 
-#green {
-	width: 46.2890625%;
-	background-color: #B8D292;
-	margin-left: 19.9%;
-}
+	#blue {
+		max-width: 30%;
+		margin-left: 29%;
+	}
 
-#red {
-	background-color: #F58A97;
-	width: 23.2421875%;
-	margin-left: 42.7%;
-}
+	#green {
+		width: 46.2890625%;
+		margin-left: 19.9%;
+	}
 
-#orange {
-	background-color: #FFB285;
-	width: 23.14453125%;
-	margin-left: 60.1%;
-}
+	#red {
+		width: 23.2421875%;
+		margin-left: 42.7%;
+	}
 
-#grey {
-	background-color: #A09E9E;
-	width: 12.01171875%;
-	margin-left: 68.9%;
-}
+	#orange {
+		width: 23.14453125%;
+		margin-left: 60.1%;
+	}
 
-#mint {
-	width: 21.6796875%;
-	margin-left: 77.6%;
-	background-color: #D6E4D8;
-}
+	#grey {
+		width: 12.01171875%;
+		margin-left: 68.9%;
+	}
 
-#yellow {
-	width: 53.515625%;
-	margin-left: 43.2%;
-	background-color: #FFF796;
-}
+	#mint {
+		width: 21.6796875%;
+		margin-left: 77.6%;
+	}
+
+	#yellow {
+		width: 53.515625%;
+		margin-left: 43.2%;
+	}
 
 }
 
