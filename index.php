@@ -37,7 +37,7 @@
 				<li id="orange">Roof terraces</li>
 				<li id="grey">The tower block</li>
 				<li id="mint">The best apartment</li>
-				<li id="yellow">Down into the abyss</li>
+				<li id="yellow">Snakes and ladders</li>
 			</ul>
 
 			<div class="rearwindow__images">
