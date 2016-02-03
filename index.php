@@ -50,9 +50,10 @@
 				<a class="grey" href="#grey"></a>
 				<a class="mint" href="#mint"></a>
 				<a class="yellow" href="#yellow"></a>
+
+				<img class="rearwindow__images-courtyard" src="images/courtyard.png" alt="">
 			</div>
 
-			<img class="rearwindow__courtyard" src="images/courtyard.png" alt="">
 		</section>
 
 	</main><!-- /#main -->
