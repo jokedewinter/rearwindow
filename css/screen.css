@@ -211,32 +211,22 @@ ul {
  */
 
 /* Percentages for top do not seem to work, so margin-top is called to the rescue. */
-.rearwindow__images li {
+.rearwindow__images a {
 	position: absolute;
 	top: 0;
 	z-index: 100;
 }
 
-.rearwindow__images li:hover {
+.rearwindow__images a:hover {
 	opacity: 0.5;
 }
-/*
-blue       155 x 158    15.13671875   32.5102880654   #9FA7C8
-brown      148 x 334    14.453125     68.7242798345   #BEAC9C
-green      474 x 159    46.2890625    32.7160493823   #B8D292
-grey       123 x 174    12.01171875   35.8024691353   #A09E9E
-mint       222 x 224    21.6796875    46.0905349788   #D6E4D8
-orange     237 x 195    23.14453125   40.1234567896   #FFB285
-purple     180 x 357    17.578125     73.4567901225   #E3CBF7
-red        238 x 218    23.2421875    44.8559670776   #F58A97
-yellow     548 x 201    53.515625     41.3580246908   #FFF796
-*/
+
 .purple {
 	width: 17.578125%;
 	height: 73.4567901225%;
 	left: 2%;
 	margin-top: 7.5%;
-	//background: #E3CBF7 url('../images/colours/purple.png') no-repeat;
+	background: url('../images/colours/purple.png') no-repeat;
 }
 
 .brown {
@@ -244,6 +234,7 @@ yellow     548 x 201    53.515625     41.3580246908   #FFF796
 	height: 68.7242798345%;
 	left: 16.5%;
 	margin-top: 9.3%;
+	background: url('../images/colours/brown.png') no-repeat;
 }
 
 .blue {
@@ -251,6 +242,7 @@ yellow     548 x 201    53.515625     41.3580246908   #FFF796
 	height: 32.5102880654%;
 	left: 31.4%;
 	margin-top: 16.8%;
+	background: url('../images/colours/blue.png') no-repeat;
 }
 
 .green {
@@ -258,6 +250,7 @@ yellow     548 x 201    53.515625     41.3580246908   #FFF796
 	height: 32.7160493823%;
 	left: 19.9%;
 	margin-top: 26%;
+	background: url('../images/colours/green.png') no-repeat;
 }
 
 .red {
@@ -265,6 +258,7 @@ yellow     548 x 201    53.515625     41.3580246908   #FFF796
 	height: 44.8559670776%;
 	left: 42.7%;
 	margin-top: 7.8%;
+	background: url('../images/colours/red.png') no-repeat;
 }
 
 .orange {
@@ -272,6 +266,7 @@ yellow     548 x 201    53.515625     41.3580246908   #FFF796
 	height: 40.1234567896%;
 	left: 60.1%;
 	margin-top: 10.3%;
+	background: url('../images/colours/orange.png') no-repeat;
 }
 
 .grey {
@@ -279,6 +274,7 @@ yellow     548 x 201    53.515625     41.3580246908   #FFF796
 	height: 35.8024691353%;
 	left: 68.9%;
 	margin-top: 1.7%;
+	background: url('../images/colours/grey.png') no-repeat;
 }
 
 .mint {
@@ -286,6 +282,7 @@ yellow     548 x 201    53.515625     41.3580246908   #FFF796
 	height: 46.0905349788%;
 	left: 77.6%;
 	margin-top: 5.2%;
+	background: url('../images/colours/mint.png') no-repeat;
 }
 
 .yellow {
@@ -293,4 +290,5 @@ yellow     548 x 201    53.515625     41.3580246908   #FFF796
 	height: 41.3580246908%;
 	left: 43.2%;
 	margin-top: 25.5%;
+	background: url('../images/colours/yellow.png') no-repeat;
 }
