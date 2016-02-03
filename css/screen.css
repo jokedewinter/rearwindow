@@ -170,11 +170,20 @@ ul {
 	
 	
 	.rearwindow__images {
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
 		position: relative;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	
+	.rearwindow__images-courtyard {
+		display: none;
 	}
 	
 	.rearwindow__images a {
+	
 		width: 2em;
 		height: 2em;
 		margin: 0.1em;
@@ -204,6 +213,10 @@ ul {
 
 @media screen and ( max-width: 599px ) {
 
+	.rearwindow__areas {
+		width: 90%;
+		margin: 0 auto 2em auto;
+	}
 
 	.rearwindow__areas li {
 
@@ -215,7 +228,7 @@ ul {
 
 .rearwindow__areas li:target {
 	
-		height: 400px;
+		height: 430px;
 
 		width: 100%;
 }
