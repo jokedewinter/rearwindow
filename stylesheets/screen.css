@@ -1,0 +1,326 @@
+/*
+Author: Joke De Winter Ltd
+Author URI: http://www.jokedewinter.co.uk
+Description: Hero image block experiment with clickable areas
+Version: 1.0
+*/
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Base Styles
+ * -------------------------------------------------------------------------------------------------
+ */
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: auto;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * General Styles
+ * -------------------------------------------------------------------------------------------------
+ */
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Experiment - Setup
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.rearwindow {
+	width: 90%;
+	max-width: 1024px;
+	margin: 5em auto 0 auto;
+	position: relative;
+}
+
+.rearwindow__images {
+	position: relative;
+}
+
+.rearwindow__images-courtyard {
+	width: 100%;
+	z-index: 90;
+	position: relative;
+}
+
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ position: relative;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Experiment - Hit areas narrow viewport
+ * -------------------------------------------------------------------------------------------------
+ */
+
+@media screen and ( max-width: 599px ) {
+
+	.rearwindow__images {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+	}
+
+	.rearwindow__images-courtyard {
+		display: none;
+	}
+
+	.rearwindow__images a {
+		width: 2em;
+		height: 2em;
+		margin: 0.1em;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	.blue { background: #9FA7C8; }
+	.brown { background: #BEAC9C; }
+	.green { background: #B8D292; }
+	.grey { background: #A09E9E; }
+	.mint { background: #D6E4D8; }
+	.orange { background: #FFB285; }
+	.purple { background: #E3CBF7; }
+	.red { background: #F58A97; }
+	.yellow { background: #FFF796; }
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Experiment - Target styles
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.rearwindow__areas li {
+	display: block;
+	height: 0;
+	opacity: 0;
+	position: relative;
+	z-index: 95;
+}
+
+.rearwindow__areas li:target {
+	height: auto;
+	opacity: 1;
+	padding: 0.5em 1em;
+	display: inline-block;
+	text-align: center;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Experiment - Target styles narrow viewport
+ * -------------------------------------------------------------------------------------------------
+ */
+
+@media screen and ( max-width: 599px ) {
+
+	.rearwindow__areas {
+		width: 90%;
+		margin: 0 auto 2em auto;
+	}
+
+	.rearwindow__areas li {
+		background-position-y: 3em;
+		background-position-x: center;
+		background-repeat: no-repeat;
+		background-color: #f8f7f0;
+	}
+
+	.rearwindow__areas li:target {
+		width: 100%;
+		height: 430px;
+	}
+
+	#purple { background-image: url('../assets/sections/purple.png'); }
+	#brown { background-image: url('../assets/sections/brown.png'); }
+	#blue { background-image: url('../assets/sections/blue.png'); }
+	#green { background-image: url('../assets/sections/green.png'); }
+	#red { background-image: url('../assets/sections/red.png'); }
+	#orange { background-image: url('../assets/sections/orange.png'); }
+	#grey { background-image: url('../assets/sections/grey.png'); }
+	#mint { background-image: url('../assets/sections/mint.png'); }
+	#yellow { background-image: url('../assets/sections/yellow.png'); }
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Experiment - Target styles wide viewport
+ * -------------------------------------------------------------------------------------------------
+ */
+
+@media screen and (min-width: 600px ) {
+
+	.rearwindow__areas {
+		height: 2.5em;
+	}
+
+	#purple {
+		width: 17.578125%;
+		margin-left: 2%;
+		background-color: #E3CBF7;
+	}
+
+	#brown {
+		width: 14.453125%;
+		margin-left: 16.5%;
+		background-color: #BEAC9C;
+	}
+
+	#blue {
+		max-width: 30%;
+		margin-left: 29%;
+		background-color: #9FA7C8;
+	}
+
+	#green {
+		width: 46.2890625%;
+		margin-left: 19.9%;
+		background-color: #B8D292;
+	}
+
+	#red {
+		width: 23.2421875%;
+		margin-left: 42.7%;
+		background-color: #F58A97;
+	}
+
+	#orange {
+		width: 23.14453125%;
+		margin-left: 60.1%;
+		background-color: #FFB285;
+	}
+
+	#grey {
+		width: 12.01171875%;
+		margin-left: 68.9%;
+		background-color: #A09E9E;
+	}
+
+	#mint {
+		width: 21.6796875%;
+		margin-left: 77.6%;
+		background-color: #D6E4D8;
+	}
+
+	#yellow {
+		width: 53.515625%;
+		margin-left: 43.2%;
+		background-color: #FFF796;
+	}
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Experiment - Hit areas wide viewport
+ * -------------------------------------------------------------------------------------------------
+ */
+
+@media screen and (min-width: 600px ) {
+
+	/* Percentages for top do not seem to work, so margin-top is called to the rescue. */
+	.rearwindow__images a {
+		position: absolute;
+		top: 0;
+		z-index: 100;
+	}
+
+	.rearwindow__images a:hover {
+		opacity: 0.5;
+	}
+
+	.purple {
+		width: 17.578125%;
+		height: 73.4567901225%;
+		left: 2%;
+		margin-top: 7.5%;
+		background: url('../assets/colours/purple.png') no-repeat;
+	}
+
+	.brown {
+		width: 14.453125%;
+		height: 68.7242798345%;
+		left: 16.5%;
+		margin-top: 9.3%;
+		background: url('../assets/colours/brown.png') no-repeat;
+	}
+
+	.blue {
+		width: 15.13671875%;
+		height: 32.5102880654%;
+		left: 31.4%;
+		margin-top: 16.8%;
+		background: url('../assets/colours/blue.png') no-repeat;
+	}
+
+	.green {
+		width: 46.2890625%;
+		height: 32.7160493823%;
+		left: 19.9%;
+		margin-top: 26%;
+		background: url('../assets/colours/green.png') no-repeat;
+	}
+
+	.red {
+		width: 23.2421875%;
+		height: 44.8559670776%;
+		left: 42.7%;
+		margin-top: 7.8%;
+		background: url('../assets/colours/red.png') no-repeat;
+	}
+
+	.orange {
+		width: 23.14453125%;
+		height: 40.1234567896%;
+		left: 60.1%;
+		margin-top: 10.3%;
+		background: url('../assets/colours/orange.png') no-repeat;
+	}
+
+	.grey {
+		width: 12.01171875%;
+		height: 35.8024691353%;
+		left: 68.9%;
+		margin-top: 1.7%;
+		background: url('../assets/colours/grey.png') no-repeat;
+	}
+
+	.mint {
+		width: 21.6796875%;
+		height: 46.0905349788%;
+		left: 77.6%;
+		margin-top: 5.2%;
+		background: url('../assets/colours/mint.png') no-repeat;
+	}
+
+	.yellow {
+		width: 53.515625%;
+		height: 41.3580246908%;
+		left: 43.2%;
+		margin-top: 25.5%;
+		background: url('../assets/colours/yellow.png') no-repeat;
+	}
+}
