@@ -37,67 +37,23 @@
 				<li id="orange">Roof terraces</li>
 				<li id="grey">The tower block</li>
 				<li id="mint">The best apartment</li>
-				<li id="yellow">Down into the abyss</li>
+				<li id="yellow">Snakes and ladders</li>
 			</ul>
 
-			<ul class="rearwindow__images">
-				<li class="purple">
-					<a href="#purple">
-						<img src="images/colours/purple.png" alt="">
-					</a>
-				</li>
+			<div class="rearwindow__images">
+				<a class="purple" href="#purple"></a>
+				<a class="brown" href="#brown"></a>
+				<a class="blue" href="#blue"></a>
+				<a class="green" href="#green"></a>
+				<a class="red" href="#red"></a>
+				<a class="orange" href="#orange"></a>
+				<a class="grey" href="#grey"></a>
+				<a class="mint" href="#mint"></a>
+				<a class="yellow" href="#yellow"></a>
 
-				<li class="brown">
-					<a href="#brown">
-						<img src="images/colours/brown.png" alt="">
-					</a>
-				</li>
+				<img class="rearwindow__images-courtyard" src="images/courtyard.png" alt="">
+			</div>
 
-				<li class="blue">
-					<a href="#blue">
-						<img src="images/colours/blue.png" alt="">
-					</a>
-				</li>
-
-				<li class="green">
-					<a href="#green">
-						<img src="images/colours/green.png" alt="">
-					</a>
-				</li>
-
-				<li class="red">
-					<a href="#red">
-						<img src="images/colours/red.png" alt="">
-					</a>
-				</li>
-
-				<li class="orange">
-					<a href="#orange">
-						<img src="images/colours/orange.png" alt="">
-					</a>
-				</li>
-
-				<li class="grey">
-					<a href="#grey">
-						<img src="images/colours/grey.png" alt="">
-					</a>
-				</li>
-
-				<li class="mint">
-					<a href="#mint">
-						<img src="images/colours/mint.png" alt="">
-					</a>
-				</li>
-
-				<li class="yellow">
-					<a href="#yellow">
-						<img src="images/colours/yellow.png" alt="">
-					</a>
-				</li>
-
-			</ul>
-
-			<img class="rearwindow__courtyard" src="images/courtyard.png" alt="">
 		</section>
 
 	</main><!-- /#main -->
