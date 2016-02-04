@@ -1,6 +1,8 @@
 #Rear Window
 An experiment with a hero image block with clickable areas. Each area shows some information on click.
 
+[View Demo](http://jokedewinter.github.io/rearwindow/)
+
 * CSS only, using :target to show the information.
 * Narrow viewports shows buttons for each piece of information.
 
