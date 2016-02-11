@@ -15,6 +15,11 @@
 
   <body>
 
+    <?php
+    // The SVG sprite
+    include_once('svg/svg-defs.svg');
+    ?>
+
     <!-- HEADER -->
     <header class="page__header">
       <div class="wrapper">
@@ -34,46 +39,42 @@
           </header>
 
           <div class="project__demo">
-            <?php
-          	// The SVG sprite
-          	include_once(dirname(__FILE__) . '/svg/svg-defs.svg');
-          	?>
             <section class="v2_rearwindow">
         			<ul class="v2_rearwindow__areas">
         				<li class="v2_purple">
-        					<span class="text">Behind the tree</span>
-        					<span class="box"></span>
-        					<svg class="connect"><use xlink:href="#line" /></svg>
+        					<span class="v2_text">Behind the tree</span>
+        					<span class="v2_box"></span>
+        					<svg class="v2_connect"><use xlink:href="#line" /></svg>
         				</li>
         				<li class="v2_brown">
-        					<span class="text">The side view</span>
-        					<span class="box"></span>
-        					<svg class="connect"><use xlink:href="#line" /></svg>
+        					<span class="v2_text">The side view</span>
+        					<span class="v2_box"></span>
+        					<svg class="v2_connect"><use xlink:href="#line" /></svg>
         				</li>
         				<li class="v2_blue">
-        					<span class="text">Upstairs / Downstairs</span>
-        					<span class="box"></span>
-        					<svg class="connect"><use xlink:href="#line" /></svg>
+        					<span class="v2_text">Upstairs / Downstairs</span>
+        					<span class="v2_box"></span>
+        					<svg class="v2_connect"><use xlink:href="#line" /></svg>
         				</li>
         				<li class="v2_red">
-        					<span class="text">Stacked rooms</span>
-        					<span class="box"></span>
-        					<svg class="connect"><use xlink:href="#line" /></svg>
+        					<span class="v2_text">Stacked rooms</span>
+        					<span class="v2_box"></span>
+        					<svg class="v2_connect"><use xlink:href="#line" /></svg>
         				</li>
         				<li class="v2_orange">
-        					<span class="text">Roof terraces</span>
-        					<span class="box"></span>
-        					<svg class="connect"><use xlink:href="#line" /></svg>
+        					<span class="v2_text">Roof terraces</span>
+        					<span class="v2_box"></span>
+        					<svg class="v2_connect"><use xlink:href="#line" /></svg>
         				</li>
         				<li class="v2_grey">
-        					<span class="text">The tower block</span>
-        					<span class="box"></span>
-        					<svg class="connect"><use xlink:href="#line" /></svg>
+        					<span class="v2_text">The tower block</span>
+        					<span class="v2_box"></span>
+        					<svg class="v2_connect"><use xlink:href="#line" /></svg>
         				</li>
         				<li class="v2_mint">
-        					<span class="text">The best apartment</span>
-        					<span class="box"></span>
-        					<svg class="connect"><use xlink:href="#line" /></svg>
+        					<span class="v2_text">The best apartment</span>
+        					<span class="v2_box"></span>
+        					<svg class="v2_connect"><use xlink:href="#line" /></svg>
         				</li>
         			</ul>
         		</section>
@@ -104,15 +105,15 @@
               </ul>
 
               <div class="v1_rearwindow__images">
-                <a class="v1_purple" href="#purple"></a>
-                <a class="v1_brown" href="#brown"></a>
-                <a class="v1_blue" href="#blue"></a>
-                <a class="v1_green" href="#green"></a>
-                <a class="v1_red" href="#red"></a>
-                <a class="v1_orange" href="#orange"></a>
-                <a class="v1_grey" href="#grey"></a>
-                <a class="v1_mint" href="#mint"></a>
-                <a class="v1_yellow" href="#yellow"></a>
+                <a class="v1_purple" href="#v1_purple"></a>
+                <a class="v1_brown" href="#v1_brown"></a>
+                <a class="v1_blue" href="#v1_blue"></a>
+                <a class="v1_green" href="#v1_green"></a>
+                <a class="v1_red" href="#v1_red"></a>
+                <a class="v1_orange" href="#v1_orange"></a>
+                <a class="v1_grey" href="#v1_grey"></a>
+                <a class="v1_mint" href="#v1_mint"></a>
+                <a class="v1_yellow" href="#v1_yellow"></a>
 
                 <img class="v1_rearwindow__images-courtyard" src="assets/courtyard.png" alt="">
               </div>

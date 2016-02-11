@@ -18,6 +18,18 @@ Version: 1.0
 	-webkit-text-size-adjust: auto;
 }
 
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
 /**
  * -------------------------------------------------------------------------------------------------
  * General Styles

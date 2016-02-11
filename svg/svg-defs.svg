@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+  <symbol id="line" width="165px" height="135px" viewBox="0 0 165 135">
+    <title>Line</title>
+    <path class="line" stroke="#4A4A4A" stroke-width="2" d="M4,129 L160,4" ></path>
+  </symbol>
+
+  <symbol id="curve" width="165px" height="135px" viewBox="0 0 165 135">
+    <title>Curve</title>
+    <path class="curve" fill="none" stroke="#4A4A4A" stroke-width="2" d="M4,129 C71,129 160,68 160,6"></path>
+  </symbol>
+
+</svg>

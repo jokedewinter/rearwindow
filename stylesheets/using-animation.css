@@ -1,0 +1,340 @@
+/*
+Author: Joke De Winter Ltd
+Author URI: http://www.jokedewinter.co.uk
+Description: Hero image block experiment with CSS animations
+Version: 2.0
+*/
+/**
+ * -------------------------------------------------------------------------------------------------
+ * SVG trial
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.inline-svg,
+.path {
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+	animation-name: dash;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	stroke-width: 3;
+}
+
+@keyframes dash {
+	from {
+    stroke-dashoffset: 300;
+  }
+ to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.inline-svg:hover,
+.path:hover {
+	animation-play-state: paused;
+}
+
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Experiment - Setup
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.v2_rearwindow {
+	width: 90%;
+	height: 750px;
+	margin: 0 auto;
+	position: relative;
+	background-image: url('../assets/courtyard.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.v2_rearwindow__areas {
+	position: relative;
+	height: 100%;
+}
+
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+path {
+	stroke-width: 5px;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Animation elements setup
+ * -------------------------------------------------------------------------------------------------
+ */
+
+
+.v2_rearwindow__areas li {
+	position: absolute;
+	z-index: 100;
+}
+
+.v2_rearwindow__areas span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 2em 1.5em;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Animation keyframes
+ * -------------------------------------------------------------------------------------------------
+ */
+
+@keyframes line {
+	from {
+    stroke-dashoffset: 300;
+  }
+  to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes text {
+  to {
+    opacity: 1;
+	}
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Animation calls
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.v2_connect {
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+	stroke-width: 3;
+	animation-name: line;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.v2_box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	opacity: 0;
+	animation-name: text;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.v2_text {
+	opacity: 0;
+	animation-name: text;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Timings
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.v2_blue .v2_connect { animation-delay: 0s; }
+.v2_blue .v2_box { animation-delay: 1s; }
+.v2_blue .v2_text { animation-delay: 2s; }
+
+.v2_brown .v2_connect { animation-delay: 3s; }
+.v2_brown .v2_box { animation-delay: 4s; }
+.v2_brown .v2_text { animation-delay: 5s; }
+
+.v2_purple .v2_connect { animation-delay: 6s; }
+.v2_purple .v2_box { animation-delay: 7s; }
+.v2_purple .v2_text { animation-delay: 8s; }
+
+.v2_red .v2_connect { animation-delay: 15s; }
+.v2_red .v2_box { animation-delay: 16s; }
+.v2_red .v2_text { animation-delay: 17s; }
+
+.v2_orange .v2_connect { animation-delay: 18s; }
+.v2_orange .v2_box { animation-delay: 19s; }
+.v2_orange .v2_text { animation-delay: 20s; }
+
+.v2_grey .v2_connect { animation-delay: 12s; }
+.v2_grey .v2_box { animation-delay: 13s; }
+.v2_grey .v2_text { animation-delay: 14s; }
+
+.v2_mint .v2_connect { animation-delay: 9s; }
+.v2_mint .v2_box { animation-delay: 10s; }
+.v2_mint .v2_text { animation-delay: 11s; }
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Li elements - general
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.v2_purple {
+	width: 17%;
+	height: 37%;
+	left: 2%;
+	top: 11%;
+}
+
+.v2_brown {
+	width: 14%;
+	height: 40%;
+	left: 19%;
+	top: 10%;
+}
+
+.v2_blue {
+	width: 15%;
+	height: 20%;
+	left: 31%;
+	top: 31%;
+}
+
+.v2_green {
+	width: 45%;
+	height: 15%;
+	left: 18%;
+	top: 85%;
+}
+
+.v2_red {
+	width: 23%;
+	height: 35%;
+	left: 40%;
+	top: 20%;
+}
+
+.v2_orange {
+	width: 23%;
+	height: 40%;
+	left: 55%;
+	top: 25%;
+}
+
+.v2_grey {
+	width: 12%;
+	height: 35%;
+	left: 75%;
+	top: 15%;
+}
+
+.v2_mint {
+	width: 21%;
+	height: 46%;
+	left: 85%;
+	top: 15%;
+}
+
+.v2_yellow {
+	width: 50%;
+	height: 20%;
+	left: 65%;
+	top: 85%;
+}
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Li elements - span
+ * -------------------------------------------------------------------------------------------------
+ */
+
+ .v2_green span { padding-top: 3em; }
+ .v2_mint span { padding-right: 3em; }
+ .v2_yellow span { padding-left: 7em; }
+
+ /**
+  * -------------------------------------------------------------------------------------------------
+  * Li elements - box
+  * -------------------------------------------------------------------------------------------------
+  */
+
+ .v2_purple .v2_box { background-image: url('../assets/colours/purple.png'); }
+ .v2_brown .v2_box { background-image: url('../assets/colours/brown.png'); }
+ .v2_blue .v2_box { background-image: url('../assets/colours/blue.png'); }
+ .v2_green .v2_box { background-image: url('../assets/colours/green.png'); }
+ .v2_red .v2_box { background-image: url('../assets/colours/red.png'); }
+ .v2_orange .v2_box { background-image: url('../assets/colours/orange.png'); }
+ .v2_grey .v2_box { background-image: url('../assets/colours/grey.png'); }
+ .v2_mint .v2_box { background-image: url('../assets/colours/mint.png'); }
+ .v2_yellow .v2_box { background-image: url('../assets/colours/yellow.png'); }
+
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Li elements - SVG
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.v2_purple svg {
+	margin: -6em 0 0 0;
+	transform: rotate(-47deg);
+	width: 50%;
+}
+
+.v2_brown svg {
+	margin: -10em 0 0 -2em;
+	transform: rotate(-45deg);
+	width: 150%;
+}
+
+.v2_blue svg {
+	margin: -5em 0 0 -5em;
+	transform: rotate(-65deg);
+	height: 50%;
+}
+
+.v2_green svg {
+	margin: -60% 0 0 50%;
+	height: 200%;
+}
+
+.v2_red svg {
+	margin: -10em 0 0 2em;
+	transform: rotate(-75deg);
+	width: 50%;
+}
+
+.v2_orange svg {
+	margin: -100% 0 0 7em;
+	transform: rotate(-65deg);
+	width:50%;
+	height: 70%;
+}
+
+.v2_grey svg {
+	margin: -15em 0 0 6em;
+	transform: rotate(-55deg);
+	width: 50%;
+	height: 150%;
+}
+
+.v2_mint svg {
+	margin: -17em 0 0 8em;
+	transform: rotate(-45deg);
+	height: 150%;
+}
