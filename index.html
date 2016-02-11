@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Rearwindow : An experiment with a hero image area with clickable areas to show different features/things.">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/screen.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/using-animation.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/using-target.css">
 
     <title>Rearwindow</title>
   </head>
@@ -15,78 +16,78 @@
   <body>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jokedewinter/rearwindow">View on GitHub</a>
-
-          <h1 id="project_title">Rear Window</h1>
-          <h2 id="project_tagline">An experiment with a hero image area with clickable areas to show different features/things.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jokedewinter/rearwindow/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/jokedewinter/rearwindow/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+    <header class="page__header">
+      <div class="wrapper">
+        <h1>Rear Window</h1>
+        <p class="description">Experimenting with CSS to create a hero image panel using clickable areas and animation</p>
+      </div>
+    </header>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section class="rearwindow">
-  			<ul class="rearwindow__areas">
-  				<li id="purple">Behind the tree</li>
-  				<li id="brown">The side view</li>
-  				<li id="blue">Upstairs/Downstairs</li>
-  				<li id="green">The courtyard</li>
-  				<li id="red">Stacked rooms</li>
-  				<li id="orange">Roof terraces</li>
-  				<li id="grey">The tower block</li>
-  				<li id="mint">The best apartment</li>
-  				<li id="yellow">Snakes and ladders</li>
-  			</ul>
+    <main class="page__content">
+      <div class="wrapper">
 
-  			<div class="rearwindow__images">
-  				<a class="purple" href="#purple"></a>
-  				<a class="brown" href="#brown"></a>
-  				<a class="blue" href="#blue"></a>
-  				<a class="green" href="#green"></a>
-  				<a class="red" href="#red"></a>
-  				<a class="orange" href="#orange"></a>
-  				<a class="grey" href="#grey"></a>
-  				<a class="mint" href="#mint"></a>
-  				<a class="yellow" href="#yellow"></a>
+        <section class="project">
+          <header class="project__header">
+            <h2>Using :target</h2>
+            <p>An experiment with a hero image area with clickable areas to show different features/things.</p>
+          </header>
 
-  				<img class="rearwindow__images-courtyard" src="assets/courtyard.png" alt="">
-  			</div>
-  		</section>
+          <div class="project__demo">
+            <section class="rearwindow">
+              <ul class="rearwindow__areas">
+                <li id="purple">Behind the tree</li>
+                <li id="brown">The side view</li>
+                <li id="blue">Upstairs/Downstairs</li>
+                <li id="green">The courtyard</li>
+                <li id="red">Stacked rooms</li>
+                <li id="orange">Roof terraces</li>
+                <li id="grey">The tower block</li>
+                <li id="mint">The best apartment</li>
+                <li id="yellow">Snakes and ladders</li>
+              </ul>
 
-      <section id="main_content" class="inner">
-        <h2><a id="rear-window" class="anchor" href="#rear-window" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rear Window</h2>
+              <div class="rearwindow__images">
+                <a class="purple" href="#purple"></a>
+                <a class="brown" href="#brown"></a>
+                <a class="blue" href="#blue"></a>
+                <a class="green" href="#green"></a>
+                <a class="red" href="#red"></a>
+                <a class="orange" href="#orange"></a>
+                <a class="grey" href="#grey"></a>
+                <a class="mint" href="#mint"></a>
+                <a class="yellow" href="#yellow"></a>
 
-        <p>An experiment with a hero image block with clickable areas. Each area shows some information on click.</p>
+                <img class="rearwindow__images-courtyard" src="assets/courtyard.png" alt="">
+              </div>
+            </section>
+          </div>
 
-        <ul>
-          <li>CSS only, using :target to show the information.</li>
-          <li>Narrow viewports shows buttons for each piece of information.</li>
-        </ul>
+          <footer class="project__footer">
+            <p>An experiment with a hero image block with clickable areas. Each area shows some information on click.</p>
+            <ul>
+              <li>CSS only, using :target to show the information.</li>
+              <li>Narrow viewports shows buttons for each piece of information.</li>
+            </ul>
+            <h3>To do:</h3>
+            <ul>
+              <li>Improve the narrow viewport experience. Maybe turn it into a flick through card type of thing.</li>
+              <li>Add some JavaScript to enhance the click experience on wider viewports. Or maybe some CSS transitions. </li>
+            </ul>
+          </footer>
+        </section>
 
-        <h3>To do:</h3>
-
-        <ul>
-          <li>Improve the narrow viewport experience. Maybe turn it into a flick through card type of thing.</li>
-          <li>Add some JavaScript to enhance the click experience on wider viewports. Or maybe some CSS transitions. </li>
-        </ul>
-      </section>
-    </div>
+      </div>
+    </main>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
+    <footer class="page__footer">
+      <div class="wrapper">
+        <p><a id="forkme_banner" href="https://github.com/jokedewinter/rearwindow">View on GitHub</a></p>
         <p class="copyright">Rearwindow maintained by <a href="https://github.com/jokedewinter">jokedewinter</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-
+      </div>
+    </footer>
 
   </body>
 </html>
