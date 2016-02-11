@@ -4,12 +4,13 @@ Author URI: http://www.jokedewinter.co.uk
 Description: Hero image block experiment with CSS animations
 Version: 2.0
 */
+
 /**
  * -------------------------------------------------------------------------------------------------
  * SVG trial
  * -------------------------------------------------------------------------------------------------
  */
-
+/*
 .inline-svg,
 .path {
 	stroke-dasharray: 300;
@@ -120,10 +121,38 @@ path {
  * -------------------------------------------------------------------------------------------------
  */
 
+.v2_rearwindow__areas:hover .v2_connect,
+.v2_rearwindow__areas:hover .v2_text,
+.v2_rearwindow__areas:hover .v2_box {
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	animation-play-state:paused;
+}
+
 .v2_connect {
 	stroke-dasharray: 300;
 	stroke-dashoffset: 300;
 	stroke-width: 3;
+
+	-webkit-animation-name: line;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+
+	-moz-animation-name: line;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-fill-mode: forwards;
+
+	-o-animation-name: line;
+	-o-animation-duration: 1s;
+	-o-animation-timing-function: ease-in;
+	-o-animation-iteration-count: 1;
+	-o-animation-fill-mode: forwards;
+
 	animation-name: line;
 	animation-duration: 1s;
 	animation-timing-function: ease-in;
@@ -137,8 +166,26 @@ path {
 	left: 0;
 	background-repeat: no-repeat;
 	background-size: contain;
-
 	opacity: 0;
+
+	-webkit-animation-name: text;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+
+	-moz-animation-name: text;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: ease-out;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-fill-mode: forwards;
+
+	-o-animation-name: text;
+	-o-animation-duration: 1s;
+	-o-animation-timing-function: ease-out;
+	-o-animation-iteration-count: 1;
+	-o-animation-fill-mode: forwards;
+
 	animation-name: text;
 	animation-duration: 1s;
 	animation-timing-function: ease-out;
@@ -148,6 +195,25 @@ path {
 
 .v2_text {
 	opacity: 0;
+
+	-webkit-animation-name: text;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+
+	-moz-animation-name: text;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: ease-out;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-fill-mode: forwards;
+
+	-o-animation-name: text;
+	-o-animation-duration: 1s;
+	-o-animation-timing-function: ease-out;
+	-o-animation-iteration-count: 1;
+	-o-animation-fill-mode: forwards;
+
 	animation-name: text;
 	animation-duration: 1s;
 	animation-timing-function: ease-out;
@@ -161,33 +227,138 @@ path {
  * -------------------------------------------------------------------------------------------------
  */
 
-.v2_blue .v2_connect { animation-delay: 0s; }
-.v2_blue .v2_box { animation-delay: 1s; }
-.v2_blue .v2_text { animation-delay: 2s; }
+.v2_blue .v2_connect {
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+.v2_blue .v2_box {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.v2_blue .v2_text {
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
+}
 
-.v2_brown .v2_connect { animation-delay: 3s; }
-.v2_brown .v2_box { animation-delay: 4s; }
-.v2_brown .v2_text { animation-delay: 5s; }
+.v2_brown .v2_connect {
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	-o-animation-delay: 3s;
+	animation-delay: 3s;
+}
+.v2_brown .v2_box {
+	-webkit-animation-delay: 4s;
+	-moz-animation-delay: 4s;
+	-o-animation-delay: 4s;
+	animation-delay: 4s;
+}
+.v2_brown .v2_text {
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
 
-.v2_purple .v2_connect { animation-delay: 6s; }
-.v2_purple .v2_box { animation-delay: 7s; }
-.v2_purple .v2_text { animation-delay: 8s; }
+.v2_purple .v2_connect {
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	animation-delay: 6s;
+}
+.v2_purple .v2_box {
+	-webkit-animation-delay: 7s;
+	-moz-animation-delay: 7s;
+	-o-animation-delay: 7s;
+	animation-delay: 7s;
+}
+.v2_purple .v2_text {
+	-webkit-animation-delay: 8s;
+	-moz-animation-delay: 8s;
+	-o-animation-delay: 8s;
+	animation-delay: 8s;
+}
 
-.v2_red .v2_connect { animation-delay: 15s; }
-.v2_red .v2_box { animation-delay: 16s; }
-.v2_red .v2_text { animation-delay: 17s; }
+.v2_red .v2_connect {
+	-webkit-animation-delay: 15s;
+	-moz-animation-delay: 15s;
+	-o-animation-delay: 15s;
+	animation-delay: 15s;
+}
+.v2_red .v2_box {
+	-webkit-animation-delay: 16s;
+	-moz-animation-delay: 16s;
+	-o-animation-delay: 16s;
+	animation-delay: 16s;
+}
+.v2_red .v2_text {
+	-webkit-animation-delay: 17s;
+	-moz-animation-delay: 17s;
+	-o-animation-delay: 17s;
+	animation-delay: 17s;
+}
 
-.v2_orange .v2_connect { animation-delay: 18s; }
-.v2_orange .v2_box { animation-delay: 19s; }
-.v2_orange .v2_text { animation-delay: 20s; }
+.v2_orange .v2_connect {
+	-webkit-animation-delay: 18s;
+	-moz-animation-delay: 18s;
+	-o-animation-delay: 18s;
+	animation-delay: 18s;
+}
+.v2_orange .v2_box {
+	-webkit-animation-delay: 19s;
+	-moz-animation-delay: 19s;
+	-o-animation-delay: 19s;
+	animation-delay: 19s;
+}
+.v2_orange .v2_text {
+	-webkit-animation-delay: 20s;
+	-moz-animation-delay: 20s;
+	-o-animation-delay: 20s;
+	animation-delay: 20s;
+}
 
-.v2_grey .v2_connect { animation-delay: 12s; }
-.v2_grey .v2_box { animation-delay: 13s; }
-.v2_grey .v2_text { animation-delay: 14s; }
+.v2_grey .v2_connect {
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-o-animation-delay: 12s;
+	animation-delay: 12s;
+}
+.v2_grey .v2_box {
+	-webkit-animation-delay: 13s;
+	-moz-animation-delay: 13s;
+	-o-animation-delay: 13s;
+	animation-delay: 13s;
+}
+.v2_grey .v2_text {
+	-webkit-animation-delay: 14s;
+	-moz-animation-delay: 14s;
+	-o-animation-delay: 14s;
+	animation-delay: 14s;
+}
 
-.v2_mint .v2_connect { animation-delay: 9s; }
-.v2_mint .v2_box { animation-delay: 10s; }
-.v2_mint .v2_text { animation-delay: 11s; }
+.v2_mint .v2_connect {
+	-webkit-animation-delay: 9s;
+	-moz-animation-delay: 9s;
+	-o-animation-delay: 9s;
+	animation-delay: 9s;
+}
+.v2_mint .v2_box {
+	-webkit-animation-delay: 10s;
+	-moz-animation-delay: 10s;
+	-o-animation-delay: 10s;
+	animation-delay: 10s;
+}
+.v2_mint .v2_text {
+	-webkit-animation-delay: 11s;
+	-moz-animation-delay: 11s;
+	-o-animation-delay: 11s;
+	animation-delay: 11s;
+}
 
 /**
  * -------------------------------------------------------------------------------------------------
