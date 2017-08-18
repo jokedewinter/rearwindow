@@ -62,7 +62,7 @@
 		<p>&copy; <?php echo date("Y"); ?> All rights reserved.</p>
 		<p class="jokedewinter"><a href="http://www.jokedewinter.co.uk" rel="external">Made by Joke De Winter</a></p>
 	</footer>
--->
+	-->
 
 </div><!-- /.wrapper -->
 </body>
